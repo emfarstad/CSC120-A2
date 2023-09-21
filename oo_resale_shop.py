@@ -1,5 +1,7 @@
 from computer import * #import computer class
 
+# Class adds computers to its inventory, buys and sells those computers, can print the contents of its inventory, 
+# and can check to see if a certain item exists and is able to be sold
 class ResaleShop:
 
     # What attributes will it need?
@@ -26,7 +28,7 @@ class ResaleShop:
     def sell(self, itemID: int): #doesn't work properly yet
         # what this should be: if there is something existing in the array at index itemID...
         if itemID - 1 < len(self.inventory): 
-            # make it tell you that the computer description was sold
+            # ...make it tell you that the computer description was sold and then delete the computer in the inventory
             print(self.inventory[itemID - 1].description + " sold!")
             del self.inventory[itemID - 1]
             self.itemID -= 1
@@ -94,7 +96,7 @@ print("Done.\n")
 
 # Now, let's refurbish it
 new_OS = "MacOS Monterey"
-print("Refurbishing Item ID:", computer_id, ", updating OS to", new_OS)
+print("Refurbishing Item ID: " + str(computer_id) + ", updating OS to", new_OS)
 print("Updating inventory...")
 computerShop.inventory[computer_id - 1].refurbish(new_OS)
 print("Done.\n")

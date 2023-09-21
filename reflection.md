@@ -1,3 +1,7 @@
 Use this file to record your reflection on this assignment. 
 
 What worked, what didn't, what advice would you give someone taking this course in the future?
+
+I found it difficult to do this assignment because I don't have any previous experience with python, so translating my ideas from sudocode into python took a while to figure out. I have some limited experience with OOP, so creating the computer class was not very difficult and I enjoyed creating objects and testing my methods. I had a harder time with the oo_resale_shop, as I have lost a lot of my recollection on working with arrays, lists, and dictionaries, so taking more time to review those in and out of class would be a good idea. I am honestly not sure if my code works for every instance that will be run when testing it, however I was able to debug at least some problems that I found to make the code work for a broader variety of users, which was time consuming, difficult, and also pretty fun.
+
+Advice for people taking this course in the future: look through the sample codes and watch the assignment introduction videos! They give some idea of how to start thinking through the assignment and are a good resource for if you forget how to do something small that is needed in your code.

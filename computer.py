@@ -1,3 +1,5 @@
+#class creates a computer with stored attributes that has the ability to update its price, its os,
+#refurbish itself, and return its attributes so they can be printed
 class Computer:
 
     # What attributes will it need?
@@ -23,7 +25,10 @@ class Computer:
 
     #update the price of a computer
     def update_price(self, new_price: int):
-        self.price = new_price;
+        if new_price >= 0:
+            self.price = new_price;
+        else:
+             print("Price out of range, please try again.")
     
     #update the computer OS
     def update_OS(self, new_OS: str):
